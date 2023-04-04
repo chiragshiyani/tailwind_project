@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+::-webkit-scrollbar,
+aside::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track,
+aside::-webkit-scrollbar-track {
+    background-color: black;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb {
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+}
+
+.theme-shadow {
+    box-shadow: 10px 10px 19px #1c1e22,
+        -10px -10px 19px #262a2e;
+}
+
+.active{
+    left: 0!important;
+}
+
+/* ASIDE */
+
+aside{
+    transition: 0.4s all;
+}
+
+/* MAIN */
+
+/* PROFILE-IMG */
+
+.profile-img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #aebcb9;
+}
+
+.cd-headline.clip b.is-visible {
+    opacity: 1;
+}
+
+/* RESUME */
+
+.edu-items::after,
+.job-items::after {
+    content: '';
+    width: 44px;
+    height: 4px;
+    background-color: #171717;
+    position: absolute;
+    top: 50px;
+    right: 100%;
+    z-index: -1;
+}
+
+.edu-items::before,
+.job-items::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #212428;
+    border: 4px solid #171717;
+    border-radius: 50%;
+    position: absolute;
+    top: 42px;
+    left: -52px;
+}
+
+/* CONTACT */
+
+input{
+    transition: 0.4s all;
+}
+input:focus, textarea:focus{
+    outline: 2px solid #f9004d!important;
+    caret-color: white;
+}

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="fonts/Montserrat/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="bg-theme">
+
+    <!-- ASIDE -->
+
+    <aside class="xl:w-1/5 py-12 px-10 overflow-auto fixed top-0 left-[-100%] xl:left-0 bottom-0 bg-theme z-10">
+        <a href="javascript:void(0)"
+            class="deactive bg-slate-900 text-white w-[50px] h-[50px] font-light flex justify-center items-center text-2xl rounded-full absolute top-4 right-4 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </a>
+        <div class="profile text-center">
+            <img src="img/profile.png" class="rounded-full inline-block border-4 border-zinc-700 drop-shadow-lg"
+                title="profile" alt="profile">
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="mt-10">
+                    <a href="javascript:void(0)" class="text-slate-300 font-light tracking-wider">
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        HOME
+                    </a>
+                </li>
+                <li class="mt-6">
+                    <a href="javascript:void(0)" class="text-slate-300 font-light tracking-wider">
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                        </svg>
+                        FEATURES
+                    </a>
+                </li>
+                <li class="mt-6">
+                    <a href="javascript:void(0)" class="text-slate-300 font-light tracking-wider">
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                        </svg>
+                        RESUME
+                    </a>
+                </li>
+                <li class="mt-6">
+                    <a href="javascript:void(0)" class="text-slate-300 font-light tracking-wider">
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+                        CLIENTS
+                    </a>
+                </li>
+                <li class="mt-6">
+                    <a href="javascript:void(0)" class="text-slate-300 font-light tracking-wider">
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                        </svg>
+                        PRICING
+                    </a>
+                </li>
+                <li class="mt-6">
+                    <a href="javascript:void(0)" class="text-slate-300 font-light tracking-wider">
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        BLOGS
+                    </a>
+                </li>
+                <li class="mt-6">
+                    <a href="javascript:void(0)" class="text-slate-300 font-light tracking-wider">
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                        </svg>
+                        CONTACTS
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="cart my-10">
+            <a href="javascript:void(0)" class="theme-shadow text-slate-300 block px-5 py-3 rounded-lg">
+                <ul class="flex justify-between">
+                    <li>
+                        <svg class="inline-block w-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                        </svg>
+                    </li>
+                    <li>
+                        <span class="inline-block bg-red px-1.5 rounded-full">O</span>
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="h-[1px] bg-slate-600"></div>
+        <div class="follow-me">
+            <p class="text-slate-300 tracking-wider font-light my-5">FIND WITH ME</p>
+            <ul class="flex justify-between">
+                <li>
+                    <a href="javascript:void(0)" class="theme-shadow inline-block p-4 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 text-slate-300">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="theme-shadow inline-block p-4 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 text-slate-300">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="theme-shadow inline-block p-4 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 text-slate-300">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="w-full xl:w-4/5 xl:ml-auto">
+
+        <!-- TOGGLE -->
+
+        <a href="javascript:void(0)" class="toggle absolute top-5 right-5 xl:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-12 bg-zinc-900 rounded-md p-2 text-red">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </a>
+
+        <!-- PROFILE -->
+
+        <section class="profile text-center py-28">
+            <span class="profile-img inline-block rounded-full p-2.5 relative">
+                <img src="img/profile-img.png" title="profile-img" alt="profile-img" class="rounded-full" width="300px">
+            </span>
+            <h1 class="text-slate-300 text-4xl md:text-5xl font-bold mt-6">Hi, I’m Chirag Shiyani</h1>
+            <h2 class="cd-headline text-2xl md:text-3xl clip font-light my-6">
+                <span class="text-slate-300">I am a</span>
+                <span class="cd-words-wrapper align-bottom inline-block relative text-left">
+                    <b class="is-visible opacity-0 relative whitespace-nowrap absolute top-0 left-0 text-red">Web
+                        Developer.</b>
+                    <b class="whitespace-nowrap opacity-0 absolute top-0 left-0 text-red">Professional Coder.</b>
+                </span>
+            </h2>
+            <a href="javascript:void(0)" class="text-red px-5 py-4 inline-block rounded-lg theme-shadow">CONTACT
+                ME</a>
+        </section>
+
+        <!-- FEATURES -->
+
+        <section class="features">
+            <div class="h-[1px] bg-slate-600"></div>
+            <h5 class="text-red tracking-wide text-center mt-16 mb-5">FEATURES</h5>
+            <h2 class="text-slate-300 text-center text-4xl md:text-5xl font-bold">What I Do</h2>
+            <div class="features-inner my-14">
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-1/2 lg:w-1/3">
+                        <div class="features-items theme-shadow p-10 mx-3 sm:h-full rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-14 stroke-1 text-red">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                            </svg>
+                            <h4 class="text-slate-300 text-xl lg:text-2xl font-semibold my-5">UX Consulting</h4>
+                            <p class="text-slate-300 leading-7 lg:text-lg">A UX consultant is responsible for many of the same
+                                tasks as a UX designer, but they typically.</p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3">
+                        <div class="features-items theme-shadow p-10 mx-3 sm:h-full rounded-lg mt-4 sm:mt-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-14 stroke-1 text-red">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                            </svg>
+                            <h4 class="text-slate-300 text-xl lg:text-2xl font-semibold my-5">App Development</h4>
+                            <p class="text-slate-300 leading-7 lg:text-lg">We’ll handle everything from to app development process
+                                until it is time to make your project live.</p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3">
+                        <div class="features-items theme-shadow p-10 mx-3 sm:h-full rounded-lg mt-4 lg:mt-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-14 stroke-1 text-red">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z" />
+                            </svg>
+                            <h4 class="text-slate-300 text-xl lg:text-2xl font-semibold my-5">Business Stratagy</h4>
+                            <p class="text-slate-300 leading-7 lg:text-lg">We’ll help you optimize your business processes to
+                                maximize profitability and eliminate unnecessary costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1px] bg-slate-600"></div>
+        </section>
+
+        <!-- RESUME -->
+
+        <section class="resume my-16">
+            <h5 class="text-red tracking-wide text-center mb-5">7+ YEARS OF EXPERIENCE</h5>
+            <h2 class="text-slate-300 text-center text-4xl md:text-5xl font-bold">My Resume</h2>
+            <nav class="my-10 rounded-lg theme-shadow mx-3">
+                <ul class="flex flex-wrap">
+                    <li class="w-full md:w-auto md:grow">
+                        <a href="javascipt:void(0)"
+                            class="text-red w-full inline-block text-center py-5 md:py-8 font-semibold tracking-wide">Education</a>
+                    </li>
+                    <li class="w-full md:w-auto md:grow">
+                        <a href="javascipt:void(0)"
+                            class="text-slate-300 w-full inline-block text-center py-5 md:py-8 font-semibold tracking-wide">Professional
+                            Skills</a>
+                    </li>
+                    <li class="w-full md:w-auto md:grow">
+                        <a href="javascipt:void(0)"
+                            class="text-slate-300 w-full inline-block text-center py-5 md:py-8 font-semibold tracking-wide">Experience</a>
+                    </li>
+                    <li class="w-full md:w-auto md:grow">
+                        <a href="javascipt:void(0)"
+                            class="text-slate-300 w-full inline-block text-center py-5 md:py-8 font-semibold tracking-wide">Interview</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="resume-inner mx-3">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-1/2">
+                        <div class="edu-quality">
+                            <h6 class="text-red">1998 - 2010</h6>
+                            <h2 class="text-slate-300 font-bold text-4xl mt-5">Education Quality</h2>
+                            <div class="edu-inner mt-14 pl-10 border-l-4 border-neutral-900">
+                                <div class="edu-items theme-shadow p-10 rounded-lg relative">
+                                    <ul class="flex flex-wrap justify-between items-center">
+                                        <li class="w-full sm:w-auto">
+                                            <h4 class="text-slate-300 text-xl xl:text-2xl font-semibold">BSc In Computer Science
+                                            </h4>
+                                            <p class="text-slate-400 mt-4 text-sm">University of DVI (2006 - 2010)</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-red bg-zinc-900 px-4 py-3 inline-block rounded-md text-sm mt-4">3.90 /
+                                                4</span>
+                                        </li>
+                                    </ul>
+                                    <p class="text-slate-400 mt-3 sm:mt-8 lg:text-lg">The training provided by universities in
+                                        order to prepare people to work in
+                                        various sectors of the economy or areas of culture.</p>
+                                </div>
+                                <div class="edu-items theme-shadow p-10 my-10 rounded-lg relative">
+                                    <ul class="flex flex-wrap justify-between items-center">
+                                        <li class="w-full sm:w-auto">
+                                            <h4 class="text-slate-300 text-xl xl:text-2xl font-semibold">AS - Science & Information
+                                            </h4>
+                                            <p class="text-slate-400 mt-4 text-sm">SuperKing College (2001 - 2005)</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-red bg-zinc-900 px-4 py-3 inline-block rounded-md text-sm mt-4">4.75 /
+                                                5</span>
+                                        </li>
+                                    </ul>
+                                    <p class="text-slate-400 mt-3 sm:mt-8 lg:text-lg">Higher education is tertiary education
+                                        leading to award of an academic degree. Higher education, also called
+                                        post-secondary education.</p>
+                                </div>
+                                <div class="edu-items theme-shadow p-10 rounded-lg relative">
+                                    <ul class="flex flex-wrap justify-between items-center">
+                                        <li class="w-full sm:w-auto">
+                                            <h4 class="text-slate-300 text-xl xl:text-2xl font-semibold">Secondary School Education
+                                            </h4>
+                                            <p class="text-slate-400 mt-4 text-sm">Kingstar Secondary School (1998 -
+                                                2000)</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-red bg-zinc-900 px-4 py-3 inline-block rounded-md text-sm mt-4">5.00 /
+                                                5</span>
+                                        </li>
+                                    </ul>
+                                    <p class="text-slate-400 mt-3 sm:mt-8 lg:text-lg">Secondary education or post-primary
+                                        education covers two phases on the International Standard Classification of
+                                        Education scale.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <div class="job-experience mt-10 lg:mt-0 lg:pl-5">
+                            <h6 class="text-red">2010 - 2022</h6>
+                            <h2 class="text-slate-300 font-bold text-4xl mt-5">Job Experience</h2>
+                            <div class="job-inner mt-14 pl-10 border-l-4 border-neutral-900">
+                                <div class="job-items theme-shadow p-10 rounded-lg relative">
+                                    <ul class="flex flex-wrap justify-between items-center">
+                                        <li class="w-full sm:w-auto">
+                                            <h4 class="text-slate-300 text-xl xl:text-2xl font-semibold">Sr. Software Engineer</h4>
+                                            <p class="text-slate-400 mt-4 text-sm">Google Out Tech - (2017 - Present)
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span class="text-red bg-zinc-900 px-4 py-3 inline-block rounded-md text-sm mt-4">USA</span>
+                                        </li>
+                                    </ul>
+                                    <p class="text-slate-400 mt-3 sm:mt-8 lg:text-lg">Google’s hiring process is an important part
+                                        of our culture. Googlers care deeply about their teams and the people who make
+                                        them up.</p>
+                                </div>
+                                <div class="job-items theme-shadow p-10 my-10 rounded-lg relative">
+                                    <ul class="flex flex-wrap lg:flex-nowrap justify-between items-center">
+                                        <li class="w-full sm:w-auto">
+                                            <h4 class="text-slate-300 text-xl xl:text-2xl font-semibold">Web Developer & Trainer
+                                            </h4>
+                                            <p class="text-slate-400 mt-4 text-sm">Apple Developer Team - (2012 - 2016)
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span
+                                                class="text-red bg-zinc-900 px-4 py-3 inline-block rounded-md text-sm mt-4">MALAYSIA</span>
+                                        </li>
+                                    </ul>
+                                    <p class="text-slate-400 mt-3 sm:mt-8 lg:text-lg">A popular destination with a growing number
+                                        of highly qualified homegrown graduates, it's true that securing a role in
+                                        Malaysia isn't easy.</p>
+                                </div>
+                                <div class="job-items theme-shadow p-10 rounded-lg relative">
+                                    <ul class="flex flex-wrap justify-between items-center">
+                                        <li class="w-full sm:w-auto">
+                                            <h4 class="text-slate-300 text-xl xl:text-2xl font-semibold">Front-end Developer</h4>
+                                            <p class="text-slate-400 mt-4 text-sm">Nike - (2020 - 2011)</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-red bg-zinc-900 px-4 py-3 inline-block rounded-md text-sm mt-4">INDIA</span>
+                                        </li>
+                                    </ul>
+                                    <p class="text-slate-400 mt-3 sm:mt-8 lg:text-lg">The India economy has grown strongly over
+                                        recent years, having transformed itself from a producer and innovation-based
+                                        economy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1px] bg-slate-600 mt-16"></div>
+        </section>
+
+        <!-- CLIENTS -->
+
+        <section class="clients">
+            <h5 class="text-red tracking-wide text-center mb-5">POPULAR CLIENTS</h5>
+            <h2 class="text-slate-300 text-center text-4xl md:text-5xl font-bold">Awesome Clients</h2>
+            <div class="clients-inner mt-16 mb-28 px-3">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/3">
+                        <div class="clients-items theme-shadow sticky top-40 left-0 rounded-lg md:mr-4">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                            class="py-5 w-full inline-block text-center text-red">Javascript</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                            class="py-5 w-full inline-block text-center text-white">Product Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                            class="py-5 w-full inline-block text-center text-white">Wordpress</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                            class="py-5 w-full inline-block text-center text-white">HTML To React</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                            class="py-5 w-full inline-block text-center text-white">React To Laravel</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"
+                                            class="py-5 w-full inline-block text-center text-white">Python</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <div class="clients-items">
+                            <div class="flex flex-wrap">
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg mr-2 mt-4 mb-4 md:mt-0">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client1.png" title="client1" alt="client1">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg ml-2 mt-4 mb-4 md:mr-4 md:mt-0">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client2.png" title="client2" alt="client2">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">Smiths
+                                            Marth</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg mr-2 mb-4 md:mt-0 md:mr-0">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client3.png" title="client3" alt="client3">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg ml-2 mb-4 md:ml-0 md:mr-2">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client4.png" title="client4" alt="client4">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg mr-2 mb-4 md:ml-2 md:mr-4">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client1.png" title="client1" alt="client1">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg ml-2 mb-4 md:ml-0">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client2.png" title="client2" alt="client2">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">Smiths
+                                            Marth</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg mr-2 mb-4">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client3.png" title="client3" alt="client3">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg ml-2 mb-4 md:mr-4">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client4.png" title="client4" alt="client4">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg mr-2 mb-4 md:mr-0">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client1.png" title="client1" alt="client1">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg ml-2 mb-4 md:mb-0 md:ml-0 md:mr-2">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client2.png" title="client2" alt="client2">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">Smiths
+                                            Marth</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg mr-2 md:mb-0 md:mr-4 md:ml-2">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client3.png" title="client3" alt="client3">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                                <div class="w-2/4 md:w-1/3">
+                                    <div class="client-logo theme-shadow text-center rounded-lg ml-2 md:mb-0 md:ml-0">
+                                        <a href="javascript:void(0)" class="h-40 flex items-center justify-center">
+                                            <img src="img/client4.png" title="client4" alt="client4">
+                                        </a>
+                                        <div class="w-full bg-slate-900 h-0.5"></div>
+                                        <a href="javascript:void(0)" class="text-slate-400 py-5 inline-block">John
+                                            Due</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+
+        <section class="pricing mb-16">
+            <div class="flex flex-wrap px-3">
+                <div class="w-full lg:w-1/2">
+                    <div class="pricing-items sticky top-40 left-0">
+                        <h5 class="text-red tracking-wide mb-5 text-center lg:text-left">PRICING</h5>
+                        <h2 class="text-slate-300 text-4xl md:text-5xl font-bold text-center lg:text-left">My Pricing</h2>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="pricing-items theme-shadow mt-10 lg:mt-0">
+                        <nav class="rounded-lg theme-shadow">
+                            <ul class="flex">
+                                <li class="grow text-center">
+                                    <a href="javascript:void(0)" class="w-full inline-block text-red py-8">Basic</a>
+                                </li>
+                                <li class="grow text-center">
+                                    <a href="javascript:void(0)"
+                                        class="w-full inline-block text-slate-300 py-8">Standard</a>
+                                </li>
+                                <li class="grow text-center">
+                                    <a href="javascript:void(0)"
+                                        class="w-full inline-block text-slate-300 py-8">Premium</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="p-10">
+                            <div class="flex flex-wrap justify-between items-center">
+                                <div class="w-full sm:w-auto">
+                                    <h4 class="text-slate-300 text-2xl font-semibold">Make Your Single Page</h4>
+                                    <p class="text-slate-400 mt-4 text-base">Elementor / WPBakery</p>
+                                </div>
+                                <div>
+                                    <span class="text-red px-4 py-3 rounded-md inline-block mt-4 theme-shadow">$ 30.00</span>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 my-10 text-base">All the Lorem Ipsum generators on the Internet tend
+                                to repeat predefined chunks as necessary</p>
+                            <div class="flex flex-wrap sm:flex-nowrap justify-between">
+                                <ul>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        1 Page with Elementor
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Design Customization
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Responsive Design
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Content Upload
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Design Customization
+                                    </li>
+                                    <li class="text-slate-300 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        2 Plugins/Extensions
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Multipage Elementor
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Design Figma
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Maintaine Design
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Content Upload
+                                    </li>
+                                    <li class="text-slate-300 mb-4 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Design With XD
+                                    </li>
+                                    <li class="text-slate-300 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="mr-2 w-6 h-6 inline-block">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        8 Plugins/Extensions
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0)" class="theme-shadow text-red text-center w-full inline-block py-5 rounded-lg my-8">
+                                ORDER NOW
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-6 inline-block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>                                  
+                            </a>
+                            <p class="text-slate-400 text-sm text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block mr-2 w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>                                  
+                                2 Days Delivery
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-3 w-5 inline-block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                </svg>   
+                                Unlimited Revision                               
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1px] bg-slate-600 my-16"></div>
+        </section>
+
+        <!-- BLOGS -->
+
+        <section class="blogs">
+            <h5 class="text-red tracking-wide text-center mb-5">VISIT MY BLOG AND KEEP YOUR FEEDBACK</h5>
+            <h2 class="text-slate-300 text-center text-4xl md:text-5xl font-bold">My Blog</h2>
+            <div class="blog-inner my-16">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 lg:w-1/3">
+                        <div class="blog-items theme-shadow p-8 rounded-lg md:h-full mx-3">
+                            <div class="blog-img">
+                                <img src="img/blog1.jpeg" class="w-full rounded-lg" title="blog1" alt="blog1">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="flex justify-between my-5">
+                                    <li>
+                                        <a href="javascript:void(0)" class="text-red text-xs">GALLERY</a>
+                                    </li>
+                                    <li class="text-slate-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                          </svg>                                  
+                                        4 min read
+                                    </li>
+                                </ul>
+                                <a href="javascript:void(0)" class="text-slate-300 text-xl font-semibold leading-8">What I Learned From Being a Broke, Unemployed Graduate.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3">
+                        <div class="blog-items theme-shadow p-8 rounded-lg md:h-full mx-3 mt-4 md:mt-0">
+                            <div class="blog-img">
+                                <img src="img/blog2.jpg" class="w-full rounded-lg" title="blog2" alt="blog2">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="flex justify-between my-5">
+                                    <li>
+                                        <a href="javascript:void(0)" class="text-red text-xs">TECHNICIAN</a>
+                                    </li>
+                                    <li class="text-slate-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                          </svg>                                  
+                                        4 min read
+                                    </li>
+                                </ul>
+                                <a href="javascript:void(0)" class="text-slate-300 text-xl font-semibold leading-8">Why Successful People Wear The Same Thing Every Day.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/3">
+                        <div class="blog-items theme-shadow p-8 rounded-lg md:h-full mx-3 mt-4 lg:mt-0">
+                            <div class="blog-img">
+                                <img src="img/blog3.jpeg" class="w-full rounded-lg" title="blog3" alt="blog3">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="flex justify-between my-5">
+                                    <li>
+                                        <a href="javascript:void(0)" class="text-red text-xs">DEVELOPMENT</a>
+                                    </li>
+                                    <li class="text-slate-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                          </svg>                                  
+                                        4 min read
+                                    </li>
+                                </ul>
+                                <a href="javascript:void(0)" class="text-slate-300 text-xl font-semibold leading-8">Why We Don’t Have Technical Interviews for Technical Roles at Buffer.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1px] bg-slate-600 my-16"></div>
+        </section>
+
+        <!-- CONTACT -->
+
+        <div class="contact mx-3">
+            <h5 class="text-red tracking-wide text-center mb-5">CONTACT</h5>
+            <h2 class="text-slate-300 text-center text-4xl md:text-5xl font-bold">Contact With Me</h2>
+            <div class="contact-inner my-16">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-1/2">
+                        <div class="contact-items theme-shadow p-8 rounded-lg lg:mr-5">
+                            <div class="contact-img">
+                                <img src="img/contact.png" title="contact" alt="contact" class="rounded-lg w-full">
+                            </div>
+                            <div class="contact-content">
+                                <h2 class="text-white font-bold text-3xl my-4">Nevine Acotanza</h2>
+                                <p class="text-slate-400">Chief Operating Officer</p>
+                                <p class="text-slate-400 my-5">I am available for freelance work. Connect with me via and call in to my account.</p>
+                                <p class="text-slate-400">Phone : <a href="javascript:void(0)" class="text-white">+0123456789</a></p>
+                                <p class="text-slate-400 mt-1">Email : <a href="javascript:void(0)" class="text-white">admin@example.com</a></p>
+                                <p class="text-slate-400 my-8">FIND WITH ME</p>
+                                <ul class="flex">
+                                    <li>
+                                        <a href="javascript:void(0)" class="theme-shadow inline-block p-4 rounded-lg mr-5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                                stroke="currentColor" class="w-5 text-slate-300">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="theme-shadow inline-block p-4 rounded-lg mr-5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                                stroke="currentColor" class="w-5 text-slate-300">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="theme-shadow inline-block p-4 rounded-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                                stroke="currentColor" class="w-5 text-slate-300">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <div class="contact-items theme-shadow p-8 rounded-lg mt-5 lg:mt-0">
+                            <form>
+                                <div class="columns-2">
+                                    <div>
+                                        <label class="text-slate-400 text-xs tracking-wide">YOUR NAME</label>
+                                        <input class="w-full bg-zinc-900 rounded-md my-5 p-3 text-white">
+                                    </div>
+                                    <div>
+                                        <label class="text-slate-400 text-xs tracking-wide">PHONE NUMBER</label>
+                                        <input class="w-full bg-zinc-900 rounded-md my-5 p-3 text-white">
+                                    </div>
+                                </div>
+                                <label class="text-slate-400 text-xs tracking-wide">EMAIL</label>
+                                <input class="w-full bg-zinc-900 rounded-md my-5 p-3 text-white">
+                                <label class="text-slate-400 text-xs tracking-wide">SUBJECT</label>
+                                <input class="w-full bg-zinc-900 rounded-md my-5 p-3 text-white">
+                                <label class="text-slate-400 text-xs tracking-wide">YOUR MESSAGE</label>
+                                <textarea class="w-full bg-zinc-900 rounded-md my-5 p-3 text-white h-40"></textarea>
+                                <button class="w-full theme-shadow text-slate-400 py-4 rounded-lg">SEND MESSAGE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="w-full xl:w-4/5 xl:ml-auto">
+        <div class="h-[1px] bg-slate-600"></div>
+        <p class="text-center text-slate-400 py-8">© 2023. All rights reserved by Rainbow-Themes</p>
+    </footer>
+
+    <script src="files/3.2.6"></script>
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>
